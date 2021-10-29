@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && move build ../server/public",
+    "build": "react-scripts build && move ./build ../server/public",
     "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject"
   },
