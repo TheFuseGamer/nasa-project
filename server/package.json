@@ -12,6 +12,9 @@
   },
   "author": "Amir Halloul",
   "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "csv-parse": "^4.16.3",
