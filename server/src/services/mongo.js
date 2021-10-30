@@ -14,6 +14,12 @@ async function connectDb() {
     await mongoose.connect(MONGO_CONNECTION_STRING);
 }
 
+async function disconnectDb() {
+    await mongoose.connection.close();
+    await mongoose.disconnect();
+}
+
 module.exports = {
-    connectDb
+    connectDb,
+    disconnectDb
 };
