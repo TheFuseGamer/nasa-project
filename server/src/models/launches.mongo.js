@@ -20,9 +20,7 @@ const launchesSchema = new mongoose.Schema({
         required: true
     },
     target: {
-        type: String,
-        ref: 'Planet',
-        required: true
+        type: String
     },
     customers: {
         type: [String]
